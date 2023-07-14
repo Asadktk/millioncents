@@ -95,6 +95,8 @@
                     <div class="inner">
                         <div class="icon"><span>“</span></div>
                         <div class="info">
+                            <div class="image"><a href="team.html"><img src="{{ asset('assets/images/resource/1.jpg') }}"
+                                alt=""></a></div>
                             <div class="name">Global Market Access</div>
                             {{-- <div class="designation">Director</div> --}}
                         </div>
@@ -109,7 +111,8 @@
                     <div class="inner">
                         <div class="icon"><span>“</span></div>
                         <div class="info">
-                          
+                            <div class="image"><a href="team.html"><img src="{{ asset('assets/images/resource/1.jpg') }}"
+                                alt=""></a></div>
                             <div class="name">Flexibility and Convenience</div>
                         </div>
                         <div class="text">Forex trading offers flexibility in terms of trading hours. The forex market
@@ -123,7 +126,8 @@
                     <div class="inner">
                         <div class="icon"><span>“</span></div>
                         <div class="info">
-                           
+                            <div class="image"><a href="team.html"><img src="{{ asset('assets/images/resource/1.jpg') }}"
+                                alt=""></a></div>
                             <div class="name">Potential for Profit</div> 
                         </div>
                         <div class="text">Forex trading provides the potential for significant profit opportunities. By
@@ -137,7 +141,8 @@
                     <div class="inner">
                         <div class="icon"><span>“</span></div>
                         <div class="info">
-                            
+                            <div class="image"><a href="team.html"><img src="{{ asset('assets/images/resource/1.jpg') }}"
+                                alt=""></a></div>
                             <div class="name">Low Capital Requirements</div>
                             {{-- <div class="designation">Director</div> --}}
                         </div>

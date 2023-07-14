@@ -31,8 +31,8 @@
                     <div class="inner">
                         <div class="icon"><span>“</span></div>
                         <div class="info">
-                            <div class="image"><a href="team.html"><img
-                                        src="{{ asset('assets/images/resource/1.jpg') }}" alt=""></a></div>
+                            <div class="image"><a href="team.html"><img src="{{ asset('assets/images/resource/1.jpg') }}"
+                                        alt=""></a></div>
                             <div class="name">Yellow Metal Mastery</div>
                             {{-- <div class="designation">Director</div> --}}
                         </div>
@@ -47,8 +47,8 @@
                     <div class="inner">
                         <div class="icon"><span>“</span></div>
                         <div class="info">
-                            <div class="image"><a href="team.html"><img
-                                        src="{{ asset('assets/images/resource/1.jpg') }}" alt=""></a></div>
+                            <div class="image"><a href="team.html"><img src="{{ asset('assets/images/resource/1.jpg') }}"
+                                        alt=""></a></div>
                             <div class="name">Forex Consultancy</div>
                             {{-- <div class="designation">Director</div> --}}
                         </div>
@@ -64,8 +64,8 @@
                     <div class="inner">
                         <div class="icon"><span>“</span></div>
                         <div class="info">
-                            <div class="image"><a href="team.html"><img
-                                        src="{{ asset('assets/images/resource/1.jpg') }}" alt=""></a></div>
+                            <div class="image"><a href="team.html"><img src="{{ asset('assets/images/resource/1.jpg') }}"
+                                        alt=""></a></div>
                             <div class="name">Trading Bot</div>
                             {{-- <div class="designation">Director</div> --}}
                         </div>
@@ -80,8 +80,8 @@
                     <div class="inner">
                         <div class="icon"><span>“</span></div>
                         <div class="info">
-                            <div class="image"><a href="team.html"><img
-                                        src="{{ asset('assets/images/resource/1.jpg') }}" alt=""></a></div>
+                            <div class="image"><a href="team.html"><img src="{{ asset('assets/images/resource/1.jpg') }}"
+                                        alt=""></a></div>
                             <div class="name">Signal Service</div>
                             {{-- <div class="designation">Director</div> --}}
                         </div>
@@ -98,7 +98,7 @@
 
 
 
-   
+
 
     <!-- Call To Section -->
     <section class="call-to-section-two alternate">
