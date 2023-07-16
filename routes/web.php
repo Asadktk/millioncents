@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +16,26 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+// Admin Ruote
+Route::prefix('admin')->group(function(){
+    Route::get('/admin', [AdminController::class, 'create'])->name('admin_register_form');
+    Route::post('/register', [AdminController::class, 'register'])->name('admin.register');
+    Route::get('/adminlogincreat', [AdminController::class, 'login'])->name('admin_login_form');
+    Route::post('/adminloginstore', [AdminController::class, 'authenticateadmin'])->name('admin.login');
+    // Route::get('/login', [AdminController::class, ''])->name('');
+});
+
+// User Ruote
+Route::prefix('/user')->group(function(){
+    Route::get('/user', [UserController::class, 'create'])->name('user_register_form');
+    Route::post('/register', [UserController::class, 'store'])->name('user.register');
+    Route::get('/userlogin', [UserController::class, 'login'])->name('user_login_form');
+    Route::post('/users/authenticate', [UserController::class, 'authenticate'])->name('user.login');
+    //User Logout
+    Route::post('/logout', [UserController::class, 'logout'])->middleware('auth');
+    // Route::get('/login', [AdminController::class, ''])->name('');
+});
 
 Route::view('/', 'frontend.dashboard');
 Route::view('/about', 'frontend.about.about');

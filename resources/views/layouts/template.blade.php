@@ -89,14 +89,33 @@
                     </div>
 
                     <div class="other-links clearfix">
-                        <!-- cart btn -->
+                        @auth
+                        
+                        {{-- <li class="dropdown"><a href="{{ url('#') }}" style="padding-right: 24px"> {{ auth()->user()->name }}</a>
+                            <ul>
+                                <li><a href="portfolio.html">Log Out</a></li>
+                            </ul>
+                        </li> --}}
+                        <li class="dropdown" style="position: relative; display: inline-block;">
+                            {{-- <a href="#" style="padding-right: 24px">{{ auth()->user()->name }}</a> --}}
+                            <form action="{{ route('logout') }}" method="POST">
+                                @csrf
+                                <button class="theme-btn btn-style-one" style="height: 50px; width:80px; margin:24px">
+                                    <i class="btn-curve"></i>
+                                    Log Out
+                                </button>
+                            </form>
+                        </li>
+                        @else
                         <div class="cart-btn">
-                            <button class="theme-btn btn-style-one" style="height: 50px; width:80px">
-                                <i class="btn-curve"></i>
-                                Log In
-                            </button>
+                            <form action="{{ route('user_login_form') }}" method="GET">
+                                <button class="theme-btn btn-style-one" style="height: 50px; width:80px">
+                                    <i class="btn-curve"></i>
+                                    Log In
+                                </button>
+                            </form>
                         </div>
-                        <!--Search Btn-->
+                        @endauth
 
                         <div class="link-box">
                             <div class="call-us">
