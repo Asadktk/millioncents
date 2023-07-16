@@ -14,9 +14,9 @@ The project's logo is currently too small and is not centered on the web page.
 
 The icons being used for the services section on the home page are outdated or no longer relevant to the services being offered.
 
-### Issue: Slider watermark needs to be removed
+<-- ### Issue: Slider watermark needs to be removed
 
-The watermark being used for the slider section on the home page is no longer needed or relevant to the content being displayed.
+The watermark being used for the slider section on the home page is no longer needed or relevant to the content being displayed. -->
 
 ### Issue: Website needs to be made responsive
 
