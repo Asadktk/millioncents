@@ -1,10 +1,10 @@
 # Project Name
 ## MillionCents
-### Issue: Scroll position starts in the middle of the body content
+<!-- ### Issue: Scroll position starts in the middle of the body content
 
 When the web page is reloaded, the scroll position starts in the middle of the body content 
 instead of at the top of the page. This issue seems to occur consistently across different 
-browsers and devices.
+browsers and devices. -->
 
 ### Issue: Logo is too small and not centered
 
