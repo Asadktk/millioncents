@@ -24,6 +24,8 @@ Route::prefix('admin')->group(function(){
     Route::get('/adminlogincreat', [AdminController::class, 'login'])->name('admin_login_form');
     Route::post('/adminloginstore', [AdminController::class, 'authenticateadmin'])->name('admin.login');
     // Route::get('/login', [AdminController::class, ''])->name('');
+    Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('admin.home')->middleware('auth');
+
 });
 
 // User Ruote

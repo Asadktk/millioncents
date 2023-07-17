@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+    
 <head>
     <meta charset="utf-8">
     <title>Linoor - DIgital Agency HTML Template | Home 02</title>
@@ -37,6 +38,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+    <style>
+        .logo-box {
+            padding: 10px; /* Adjust the padding as per your requirements */
+            /* Add any other styles you need for the logo box */
+        }
+    
+        .logo img {
+            max-height: 100%; /* Adjust the max-height to control the logo size */
+            /* Add any other styles you need for the logo */
+        }
+    </style>
 </head>
 
 <body>
@@ -54,13 +67,17 @@
             <!-- Header Upper -->
             <div class="header-upper">
                 <div class="inner-container clearfix">
-                    <!--Logo-->
-                    <div class="logo-box">
-                        <div class="logo"><a href="index.html" title="Linoor - DIgital Agency HTML Template"><img
-                                    id="thm-logo" src=" {{ asset('assets/images/logo.png') }}"
-                                    alt="Linoor - DIgital Agency HTML Template"
-                                    title="Linoor - DIgital Agency HTML Template"></a></div>
-                    </div>
+                    <!-- Logo -->
+                  
+<div class="logo-box">
+    <div class="logo">
+        <a href="index.html" title="Linoor - DIgital Agency HTML Template">
+            <img id="thm-logo" src="{{ asset('assets/images/logo.png') }}"
+                alt="Linoor - DIgital Agency HTML Template"
+                title="Linoor - DIgital Agency HTML Template">
+        </a>
+    </div>
+</div>
                     <div class="nav-outer clearfix">
                         <!--Mobile Navigation Toggler-->
                         <div class="mobile-nav-toggler"><span class="icon flaticon-menu-2"></span><span

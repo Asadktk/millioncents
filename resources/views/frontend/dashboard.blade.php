@@ -9,12 +9,12 @@
             <div class="slide-item">
                 <div class="image-layer" style="background-image: url({{ asset('assets/images/main-slider/22.jpg') }});">
                 </div>
-                <div class="shape-1"></div>
-                <div class="shape-2"></div>
-                <div class="shape-3"></div>
-                <div class="shape-4"></div>
+                {{-- <div class="shape-1"></div>
+                <div class="shape-2"></div> --}}
+                {{-- //<div class="shape-3"></div> --}}
+                {{-- <div class="shape-4"></div>
                 <div class="shape-5"></div>
-                <div class="shape-6"></div>
+                <div class="shape-6"></div> --}}
                 <div class="auto-container">
                     <div class="content-box">
                         <div class="content">
@@ -37,12 +37,12 @@
             <div class="slide-item">
                 <div class="image-layer" style="background-image: url({{ asset('assets/images/main-slider/3-1.jpg') }});">
                 </div>
-                <div class="shape-1"></div>
+                {{-- <div class="shape-1"></div>
                 <div class="shape-2"></div>
                 <div class="shape-3"></div>
                 <div class="shape-4"></div>
-                <div class="shape-5"></div>
-                <div class="shape-6"></div>
+                <div class="shape-5"></div> --}}
+                {{-- <div class="shape-6"></div> --}}
                 <div class="auto-container">
                     <div class="content-box">
                         <div class="content">
@@ -65,12 +65,12 @@
             <div class="slide-item">
                 <div class="image-layer" style="background-image: url({{ asset('assets/images/main-slider/2.jpg') }});">
                 </div>
-                <div class="shape-1"></div>
+                {{-- <div class="shape-1"></div>
                 <div class="shape-2"></div>
                 <div class="shape-3"></div>
                 <div class="shape-4"></div>
                 <div class="shape-5"></div>
-                <div class="shape-6"></div>
+                <div class="shape-6"></div> --}}
                 <div class="auto-container">
                     <div class="content-box">
                         <div class="content">

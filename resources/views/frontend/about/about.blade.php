@@ -310,7 +310,7 @@
                             and efforts to learn and develop the necessary skills. Here are some example of individuals who
                             can learn or make money with Forex.</div>
                         <div class="featured-block-two clearfix">
-                            <div class="image"><img src="{{ asset('assets/images/resource/3.jpg') }}" alt="" style="height: 236px">
+                            <div class="image"><img src="{{ asset('assets/images/resource/3.jpg') }}" style="height: 236px">
                             </div>
                             <div class="text">
                                 <ul>

@@ -17,11 +17,10 @@ class AdminMiddleware
     public function handle(Request $request, Closure $next): Response
     {
         if (!Auth::guard('admin')->check()) {
-
-            return redirect()->route('login_form')->with('error', 'please login first!');
-
+            return redirect()->route('admin_login_form')->with('error', 'Please login first!');
         }
-
-            return $next($request);
+    
+        return $next($request);
     }
+    
 }

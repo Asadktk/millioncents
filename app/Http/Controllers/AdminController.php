@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Admin;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
+use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
 {
@@ -47,10 +48,10 @@ class AdminController extends Controller
             'password' => 'required', 
         ]);
 
-        if(auth()->attempt($formFields)){
+        if(Auth::guard('admin')->attempt($formFields)){
             $request->session()->regenerate(); 
 
-            return redirect('dashboard')->with('message', 'You are now logged in!');
+            return view('admin.dashboard')->with('message', 'You are now logged in!');
         }
 
         return back()->withErrors(['email' => 'Invalid Credentials'])->onlyInput('email');
@@ -58,11 +59,14 @@ class AdminController extends Controller
 
      //Logout User
      public function logout(Request $request){
-        auth()->logout();
+        Auth::guard('admin')->logout();
 
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
         return redirect('/')->with('message', 'You have been logged out!');
     }
+     public function dashboard  (){
+        return view('admin.dashboard'); 
+     }
 }
