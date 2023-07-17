@@ -9,7 +9,7 @@ use Illuminate\Validation\Rule;
 class UserController extends Controller
 {
     public function create(){
-        return view('frontend.users.register');
+        return view('users.register');
     }
 
      //Create new User
@@ -30,12 +30,13 @@ class UserController extends Controller
         //Login
         auth()->login($user);
 
-        return redirect('/')->with('message', 'User created and logged in');
+        return view('users.dashboard')->with('message', 'You are now logged in!');       
+
     }
 
      //Show Login Form
      public function login(){
-        return view('frontend.users.login');
+        return view('users.login');
     }
 
     //Authenticate User
@@ -50,8 +51,7 @@ class UserController extends Controller
         if(auth()->attempt($formFields)){
             $request->session()->regenerate(); 
 
-            return redirect('/')->with('message', 'You are now logged in!');
-        }
+            return view('users.dashboard')->with('message', 'You are now logged in!');        }
 
         return back()->withErrors(['email' => 'Invalid Credentials'])->onlyInput('email');
     }

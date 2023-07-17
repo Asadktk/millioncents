@@ -57,7 +57,7 @@
             <div class="login-content">
                 <div class="login-content__inner">
                     <div class="logo-box">
-                        <div class="logo text-center"><a href="index.html"
+                        <div class="lg text-center"><a href="index.html"
                                 title="Linoor - DIgital Agency HTML Template"><img
                                     src="{{ asset('assets/images/logo.png') }}" width="134" id="dLogo"
                                     class="main-logo" alt="Linoor - DIgital Agency HTML Template"

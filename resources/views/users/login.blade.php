@@ -1,6 +1,4 @@
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -58,16 +56,26 @@
             <div class="login-content">
                 <div class="login-content__inner">
                     <div class="logo-box">
-                        <div class="lg text-center"><a href="index.html"
-                                title="Linoor - DIgital Agency HTML Template"><img src="{{ asset('assets/images/logo.png') }}"
-                                width="134" height="234" id="dLogo" class="main-logo"
-                                alt="Linoor - DIgital Agency HTML Template"
-                                title="Linoor - DIgital Agency HTML Template"></a></div>
+                        <div class="lg text-center"><a href="index.html" title="Linoor - DIgital Agency HTML Template"><img src="{{ asset('assets/images/logo.png') }}"
+                            width="134" height="234" id="dLogo" class="main-logo"
+                            alt="Linoor - DIgital Agency HTML Template"
+                            title="Linoor - DIgital Agency HTML Template"></a></div>
                     </div>
-                    <form action="{{ route('admin.login') }}" method="POST">
+                    <form action="{{ route('user.login') }}" method="POST">
                         @csrf
-                        <input type="text" placeholder="Enter Email Address *"  name="email" value="{{ old('email') }}">
-                        <input type="password" placeholder="Your Password *"  name="password" value="{{ old('password') }}">
+                        <input type="text" placeholder="Enter Email Address *" name="email"
+                            value="{{ old('email') }}">
+                        @error('email')
+                            <p class="text-red-500 text-xs mt-1">
+                                {{ $message }}
+                            </p>
+                        @enderror
+                        <input type="password" placeholder="Your Password *" name="password" value="{{ old('password') }}">
+                        @error('password')
+                            <p class="text-red-500 text-xs mt-1">
+                                {{ $message }}
+                            </p>
+                        @enderror
                         <p class="text-right"><a href="forgot-password.html">Forgot your password?</a></p>
                         <button type='submit' class="theme-btn btn-style-one">
                             <i class="btn-curve"></i>
@@ -105,3 +113,4 @@
 </body>
 
 </html>
+

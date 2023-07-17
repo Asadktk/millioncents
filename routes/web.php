@@ -39,7 +39,7 @@ Route::prefix('/user')->group(function(){
     // Route::get('/login', [AdminController::class, ''])->name('');
 });
 
-Route::view('/', 'frontend.dashboard');
+Route::view('/', 'frontend.frontend');
 Route::view('/about', 'frontend.about.about');
 Route::view('/services', 'frontend.services.services');
 Route::get('/contact', [ContactController::class, 'index']);

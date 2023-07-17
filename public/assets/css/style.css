@@ -630,7 +630,13 @@ img {
 }
 
 .logo img {
-    height: 120px;
+    height: 130px;
+    padding-bottom: 50px;
+    padding-top: 0;
+}
+
+.lg {
+    height: 300px;
     padding-bottom: 50px;
     padding-top: 0;
 }
